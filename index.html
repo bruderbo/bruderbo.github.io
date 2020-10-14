@@ -1,286 +1,851 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
-    <meta charset="UTF-8" />
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Educenter | hugo education template</title>
 
-    <meta name="generator" content="Hugo 0.76.3" /><meta name="theme-color" content="#fff" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
-    
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="This is meta description">
+  
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.76.3" />
+  <!-- multilingual SEO optimizations -->
+  
+  
+  <link rel="alternate" hreflang="en" href="http://examplesite.org/">
+  
+  <link rel="alternate" hreflang="fr" href="http://examplesite.org/fr/">
+  
+  
 
-    <title>Cong&#39;s Bolg</title>
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://examplesite.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="http://examplesite.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="http://examplesite.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="http://examplesite.org/plugins/venobox/venobox.css">
+  
+  <link rel="stylesheet" href="http://examplesite.org/plugins/themify-icons/themify-icons.css">
+  
 
-    <link rel="stylesheet" href="/css/meme.min.1e8b53cc7a05b05dbc95f2ae2f1d8ce4ebd266a6d0df2f46960ad99a02a8c472.css" integrity="sha256-HotTzHoFsF28lfKuLx2M5OvSZqbQ3y9GlgrZmgKoxHI=" />
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://examplesite.org/scss/style.css" media="screen">
 
-    
-    
-        <script src="/js/meme.min.d04177e6f1c5591d43666ed95f575c7ddd08c71586bf42525744eaa75980e3af.js" integrity="sha256-0EF35vHFWR1DZm7ZX1dcfd0IxxWGv0JSV0Tqp1mA468="></script>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://examplesite.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="http://examplesite.org/images/favicon.png" type="image/x-icon">
 
-    
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="http://examplesite.org/images/preloader.gif" alt="preloader">
+  
+</div>
+<!-- preloader end -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Cinzel&#43;Decorative:wght@700&amp;display=swap" media="print" onload="this.media='all'" />
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Cinzel&#43;Decorative:wght@700&amp;display=swap" /></noscript>
-
-    <meta name="author" content="CongMei" /><meta name="description" content="这是 Mei Cong 的生活与技术博客！" />
-
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Cong&#39;s Bolg" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="Cong&#39;s Bolg" />
-    <meta name="msapplication-starturl" content="" />
-    <meta name="msapplication-TileColor" content="#fff" />
-    <meta name="msapplication-TileImage" content="icons/mstile-150x150.png" />
-    <link rel="manifest" href="/manifest.json" />
-
-    
-    <link rel="alternate" type="application/atom&#43;xml" href="https://congmei86.github.io/atom.xml" title="Cong&#39;s Bolg" />
-    <link rel="alternate" type="application/rss&#43;xml" href="https://congmei86.github.io/rss.xml" title="Cong&#39;s Bolg" />
-    
-
-    
-    <link rel="canonical" href="https://congmei86.github.io/" />
-    
-
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "datePublished": "2019-07-20T20:17:43+00:00",
-        "dateModified": "2020-10-14T13:42:22+02:00",
-        "url": "https://congmei86.github.io/",
-        "description": "这是 Mei Cong 的生活与技术博客！",
-        "image": "https://congmei86.github.io/icons/apple-touch-icon.png",
-        "author": {
-            "@type": "Person",
-            "description": "Viva La Vida",
-            "email": "cong.mei86@gmail.com",
-            "image": "https://congmei86.github.io/icons/apple-touch-icon.png",
-            "url": "https://wuhansaveeu.com/",
-            "name": "CongMei"
-        },
-        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)",
-        "name": "Cong's Bolg"
-    }
-</script>
-
-    
-
-<meta name="twitter:card" content="summary" />
-
-
-    
-
-
-
-<meta property="og:title" content="Cong&#39;s Bolg" />
-<meta property="og:description" content="这是 Mei Cong 的生活与技术博客！" />
-<meta property="og:url" content="https://congmei86.github.io/" />
-<meta property="og:site_name" content="Cong&#39;s Bolg" />
-<meta property="og:locale" content="zh" />
-            <meta property="og:locale:alternate" content="en" />
-        
-            <meta property="og:locale:alternate" content="de" />
-        <meta property="og:image" content="https://congmei86.github.io/icons/apple-touch-icon.png" />
-    <meta property="og:type" content="website" />
-
-        <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
-
-        
-
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '');
-    </script>
-
-
-
-
-    
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&amp;text=reuixiy&amp;display=swap" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&amp;text=reuixiy&amp;display=swap" /></noscript>
-
-</head>
-
-    <body>
-        <div class="container">
+<header class="fixed-top header">
+  
+  
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters align-items-center">
+        <div class="col-lg-4 text-center text-lg-left">
+          <ul class="list-inline">
             
-    <header class="header">
-        
-            <div class="header-wrapper">
-                <div class="header-inner single">
-                    
-    <div class="site-brand">
-        
-            <a href="/" class="brand">Cong&#39;s Bolg</a>
-        
-    </div>
-
-                    <nav class="nav">
-    <ul class="menu" id="menu">
-        
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
             
-        
-        
-        
-        
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
             
-                <li class="menu-item"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon archive"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">文章</span></a>
-                </li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
             
-        
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-github"></i></a></li>
             
-                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分类</span></a>
-                </li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
             
-        
-            
-                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">标签</span></a>
-                </li>
-            
-        
-            
-                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">关于</span></a>
-                </li>
-            
-        
-            
-                
-                    
-                    
-                        <li class="menu-item">
-                            <a id="theme-switcher" href="#"><span class="icon theme-icon-light">🌞</span><span class="icon theme-icon-dark">🌙</span></a>
-                        </li>
-                    
-                
-            
-        
-            
-                
-                    
-                        
-                        
-                            <li class="menu-item">
-                                <div id="lang-switcher">
-            <span>🇨🇳</span>
-            
-                <ul id="langs">
-                    
-                        <li><a rel="alternate" href="/en/" hreflang="en" lang="en">🇺🇸</a></li>
-                    
-                        <li><a rel="alternate" href="/de/" hreflang="de" lang="de">🇩🇪</a></li>
-                    
-                </ul>
-            
+          </ul>
         </div>
-                            </li>
-                        
-                    
-                
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="text-color mr-3" href="tel:&#43;211234565523"><strong>CALL : </strong> &#43;211234565523</a></li>
+            <li class="list-inline-item">
+              <a class="text-color" href="mailto:info@educenter.com"><strong>EMAIL : </strong> info@educenter.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="navigation w-100  top-hider ">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="/"><img class="img-fluid"
+            src="http://examplesite.org/images/logo.png" alt="Educenter | hugo education template"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://examplesite.org">Home</a>
+            </li>
             
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://examplesite.org/about">About</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://examplesite.org/course">course</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                Pages
+              </a>
+              <div class="dropdown-menu">
+                
+                <a class="dropdown-item" href="http://examplesite.org/event">event</a>
+                
+                <a class="dropdown-item" href="http://examplesite.org/notice">notice</a>
+                
+                <a class="dropdown-item" href="http://examplesite.org/research">research</a>
+                
+                <a class="dropdown-item" href="http://examplesite.org/scholarship">scholarship</a>
+                
+                <a class="dropdown-item" href="http://examplesite.org/teacher">teacher</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://examplesite.org/blog">blog</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://examplesite.org/contact"></a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+          <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+            
+            
+            
+            
+            
+            
+            
+            
+            <option id="en" value="http://examplesite.org/" selected>En
+            </option>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <option id="fr" value="http://examplesite.org/fr/">Fr</option>
+            
+            
+            
+            
+          </select>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+<section class="hero-section overlay bg-cover" data-background="http://examplesite.org/images/banner/banner-1.jpg">
+  <div class="container">
+    <div class="hero-slider">
+      
+      
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
+              data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+            
+            <a href="http://examplesite.org/contact" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
+              data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+            
+            <a href="http://examplesite.org/contact" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
+              data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+            
+            <a href="http://examplesite.org/contact" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="bg-gray overflow-md-hidden">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-xl-4 col-lg-5 align-self-end">
+        <img class="img-fluid w-100" src="http://examplesite.org/images/banner/banner-feature.png" alt="banner-feature">
+      </div>
+      <div class="col-xl-8 col-lg-7">
+        <div class="row feature-blocks bg-gray justify-content-between">
+          
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholorship News</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad</p>
+          </div>
+          
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Notice Board</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad</p>
+          </div>
+          
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Achievements</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad</p>
+          </div>
+          
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Admission Now</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title">About Educenter</h2>
+        <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  pariatur. Excepteur sint occaecat</p>
+<p>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+</p>
         
+        
+        <a href="http://examplesite.org/about" class="btn btn-outline-primary">Learn more</a>
+        
+        
+      </div>
+      
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="http://examplesite.org/images/about/about-us.jpg" alt="about image">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">Our Course</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="/course" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block">See all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center">
+      
+      
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/courses/course-5.jpg" alt="Algorithm">
+  <div class="card-body">
+    <ul class="list-inline mb-2">
+      <li class="list-inline-item"><i class="ti-calendar"></i> 06 Month</li>
+      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Programming</li>
     </ul>
-</nav>
-
-                    
-                </div>
-            </div>
-            
-    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
-    <label for="nav-toggle" class="nav-toggle"></label>
-    <label for="nav-toggle" class="nav-curtain"></label>
-
-
-        
-    </header>
-
-
-
-
-            
-            
-    
-    
-        <main class="home">
-    <div class="poetry">
-        
-            <p>不知道是啥</p>
-        
-            <p>反正先歇着</p>
-        
+    <h4 class="card-title"><a href="http://examplesite.org/course/course-5/">Algorithm</a></h4>
+    <p class="card-text mb-4">About Course Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor …</p>
+    <a href="http://examplesite.org/course/course-5/" class="btn btn-primary btn-sm">Apply now</a>
+  </div>
+</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/courses/course-3.jpg" alt="Artificial Intelligence">
+  <div class="card-body">
+    <ul class="list-inline mb-2">
+      <li class="list-inline-item"><i class="ti-calendar"></i> 06 Month</li>
+      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Artificial Intelligence</li>
+    </ul>
+    <h4 class="card-title"><a href="http://examplesite.org/course/course-3/">Artificial Intelligence</a></h4>
+    <p class="card-text mb-4">About Course Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor …</p>
+    <a href="http://examplesite.org/course/course-3/" class="btn btn-primary btn-sm">Apply now</a>
+  </div>
+</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/courses/course-4.jpg" alt="JavaScript">
+  <div class="card-body">
+    <ul class="list-inline mb-2">
+      <li class="list-inline-item"><i class="ti-calendar"></i> 06 Month</li>
+      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Programming</li>
+    </ul>
+    <h4 class="card-title"><a href="http://examplesite.org/course/course-4/">JavaScript</a></h4>
+    <p class="card-text mb-4">About Course Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor …</p>
+    <a href="http://examplesite.org/course/course-4/" class="btn btn-primary btn-sm">Apply now</a>
+  </div>
+</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/courses/course-2.jpg" alt="Mathematics">
+  <div class="card-body">
+    <ul class="list-inline mb-2">
+      <li class="list-inline-item"><i class="ti-calendar"></i> 06 Month</li>
+      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Mathematics</li>
+    </ul>
+    <h4 class="card-title"><a href="http://examplesite.org/course/course-2/">Mathematics</a></h4>
+    <p class="card-text mb-4">About Course Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor …</p>
+    <a href="http://examplesite.org/course/course-2/" class="btn btn-primary btn-sm">Apply now</a>
+  </div>
+</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/courses/course-1.jpg" alt="Photography">
+  <div class="card-body">
+    <ul class="list-inline mb-2">
+      <li class="list-inline-item"><i class="ti-calendar"></i> 06 Month</li>
+      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Photography</li>
+    </ul>
+    <h4 class="card-title"><a href="http://examplesite.org/course/course-1/">Photography</a></h4>
+    <p class="card-text mb-4">About Course Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor …</p>
+    <a href="http://examplesite.org/course/course-1/" class="btn btn-primary btn-sm">Apply now</a>
+  </div>
+</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/courses/course-6.jpg" alt="Vlogging">
+  <div class="card-body">
+    <ul class="list-inline mb-2">
+      <li class="list-inline-item"><i class="ti-calendar"></i> 06 Month</li>
+      <li class="list-inline-item"><i class="ti-bookmark-alt"></i> Photography</li>
+    </ul>
+    <h4 class="card-title"><a href="http://examplesite.org/course/course-6/">Vlogging</a></h4>
+    <p class="card-text mb-4">About Course Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor …</p>
+    <a href="http://examplesite.org/course/course-6/" class="btn btn-primary btn-sm">Apply now</a>
+  </div>
+</div>
+      </div>
+      
     </div>
     
-</main>
-
     
-    
-    
-    
-    
-    
-    
-
-            
-
-            
-    <footer id="footer" class="footer">
-        <div class="footer-inner">
-            <div class="site-info">©&nbsp;2019–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;CongMei</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div>
-
-            
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="/course" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">See all</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-            
+
+
+
+
+<section class="section bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h6 class="text-white font-secondary mb-0">Click to Join the Advance Workshop</h6>
+        <h2 class="section-title text-white">Training In Advannce Networking</h2>
+        
+        
+        <a href="http://examplesite.org/contact" class="btn btn-light">join now</a>
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="section bg-cover" data-background="http://examplesite.org/images/backgrounds/success-story.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-4 position-relative success-video">
+        <a class="play-btn venobox" href="https://www.youtube.com/watch?v=ResipmZmpDU" data-vbtype="video">
+          <i class="ti-control-play"></i>
+        </a>
+      </div>
+      <div class="col-lg-6 col-sm-8">
+        <div class="bg-white p-5">
+          <h2 class="section-title">Success Stories</h2>
+          <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.</p>
+<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+
+
+
+
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">Upcoming Events</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="/event" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">See all</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      
+      
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+  <div class="card-img position-relative">
+    <img class="card-img-top rounded-0" src="/images/events/event-1.jpg" alt="Social media and behavior economics conference">
+    <div class="card-date"><span>09</span><br>Mar</div>
+  </div>
+  <div class="card-body">
+    
+    <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi, Dhaka</p>
+    <h4 class="card-title"><a href="http://examplesite.org/event/event-1/">Social media and behavior economics conference</a></h4>
+  </div>
+</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+  <div class="card-img position-relative">
+    <img class="card-img-top rounded-0" src="/images/events/event-2.jpg" alt="Social media and behavior economics conference">
+    <div class="card-date"><span>09</span><br>Mar</div>
+  </div>
+  <div class="card-body">
+    
+    <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi, Dhaka</p>
+    <h4 class="card-title"><a href="http://examplesite.org/event/event-2/">Social media and behavior economics conference</a></h4>
+  </div>
+</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+  <div class="card-img position-relative">
+    <img class="card-img-top rounded-0" src="/images/events/event-3.jpg" alt="Social media and behavior economics conference">
+    <div class="card-date"><span>09</span><br>Mar</div>
+  </div>
+  <div class="card-body">
+    
+    <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi, Dhaka</p>
+    <h4 class="card-title"><a href="http://examplesite.org/event/event-3/">Social media and behavior economics conference</a></h4>
+  </div>
+</div>
+      </div>
+      
+    </div>
+    
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="/event" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">See all</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Latest News</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      
+      
+      <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <article class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/blog/post-1.jpg" alt="Elegant Light Box Paper Cut Dioramas">
+  <div class="card-body">
+    
+    <ul class="list-inline mb-3">
+      
+      <li class="list-inline-item mr-3 ml-0"><i class="ti-calendar"></i> 06 Jul, 2019</li>
+      
+      <li class="list-inline-item mr-3 ml-0"><i class="ti-user"></i> <a
+        href="/authorjohn-doe">John Doe</a></li>
+    </ul>
+      <h4 class="card-title"><a href="http://examplesite.org/blog/blog-post-1/">Elegant Light Box Paper Cut Dioramas</a></h4>
+    <p class="card-text">The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur …</p>
+    <a href="http://examplesite.org/blog/blog-post-1/" class="btn btn-primary btn-sm">Read More</a>
+  </div>
+</article>
+      </article>
+      
+      <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <article class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/blog/post-2.jpg" alt="Elegant Light Box Paper Cut Dioramas">
+  <div class="card-body">
+    
+    <ul class="list-inline mb-3">
+      
+      <li class="list-inline-item mr-3 ml-0"><i class="ti-calendar"></i> 06 Jul, 2019</li>
+      
+      <li class="list-inline-item mr-3 ml-0"><i class="ti-user"></i> <a
+        href="/authorjohn-doe">John Doe</a></li>
+    </ul>
+      <h4 class="card-title"><a href="http://examplesite.org/blog/blog-post-2/">Elegant Light Box Paper Cut Dioramas</a></h4>
+    <p class="card-text">The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur …</p>
+    <a href="http://examplesite.org/blog/blog-post-2/" class="btn btn-primary btn-sm">Read More</a>
+  </div>
+</article>
+      </article>
+      
+      <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <article class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+  <img class="card-img-top rounded-0" src="/images/blog/post-3.jpg" alt="Elegant Light Box Paper Cut Dioramas">
+  <div class="card-body">
+    
+    <ul class="list-inline mb-3">
+      
+      <li class="list-inline-item mr-3 ml-0"><i class="ti-calendar"></i> 06 Jul, 2019</li>
+      
+      <li class="list-inline-item mr-3 ml-0"><i class="ti-user"></i> <a
+        href="/authormark-dinn">Mark Dinn</a></li>
+    </ul>
+      <h4 class="card-title"><a href="http://examplesite.org/blog/blog-post-3/">Elegant Light Box Paper Cut Dioramas</a></h4>
+    <p class="card-text">The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur …</p>
+    <a href="http://examplesite.org/blog/blog-post-3/" class="btn btn-primary btn-sm">Read More</a>
+  </div>
+</article>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer>
+  
+  
+  
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+          <h3 class="text-white">Subscribe Newsletter</h3>
+          <form action="https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;amp;id=a0a2c6d074" method="post" name="mc-embedded-subscribe-form" target="_blank">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter your email…">
+              <button type="submit" name="subscribe" class="btn btn-primary">Join</button>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          
+          <a class="logo-footer" href="/"><img class="img-fluid mb-4" src="http://examplesite.org/images/logo.png" alt="Educenter | hugo education template"></a>
+          <ul class="list-unstyled">
+            <li class="mb-4">9567 Turner Trace Apt. BC C3G8A4</li>
+            <li class="mb-4"><a href="mailto:info@educenter.com">info@educenter.com</a></li>
+            <li class="mb-4">+211234565523</li>
+          </ul>
         </div>
         
-
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">company</h4>
+          <ul class="list-unstyled">
+            
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/about">About</a></li>
+            
+            
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/course">course</a></li>
+            
+            
+            
+            
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/blog">blog</a></li>
+            
+            
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/contact">Contact</a></li>
+            
+            
+          </ul>
+        </div>
         
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">links</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/event">event</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/notice">notice</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/research">research</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/scholarship">scholarship</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/teacher">teacher</a></li>
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">Courses</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/course/course-5/">Algorithm</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/course/course-3/">Artificial Intelligence</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/course/course-4/">JavaScript</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/course/course-2/">Mathematics</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/course/course-1/">Photography</a></li>
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">new notice</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/notice/notice-1/">Teaching Materials and Testing Methods</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/notice/notice-2/">Teaching Materials and Testing Methods</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://examplesite.org/notice/notice-3/">Teaching Materials and Testing Methods</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright © 2020 a hugo theme by <a href="https://themefisher.com">themefisher</a></p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-github text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Google Map API -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+
+
+<!-- JS Plugins -->
+
+<script src="http://examplesite.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://examplesite.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://examplesite.org/plugins/slick/slick.min.js"></script>
+
+<script src="http://examplesite.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="http://examplesite.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="http://examplesite.org/plugins/google-map/gmap.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://examplesite.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
 
 
 
 
 
-
-
-
-    <script src="/js/medium-zoom.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+</div>
 <script>
-    mediumZoom(document.querySelectorAll('div.post-body img'), {
-        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
-    })
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
 </script>
 
 
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
 
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
-
-
-
-
-
-
-
-    </body>
 </html>
